@@ -1,7 +1,8 @@
 name: Build and Deploy
 
 on:
-  push:
+  workflow_dispatch: # 加上这一行，允许手动触发
+  push:            # 保留原来的 push 触发条件
     branches:
       - main
   # schedule:
