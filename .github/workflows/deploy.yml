@@ -72,7 +72,7 @@ jobs:
     name: Build artifact
     runs-on: ubuntu-latest
     needs: check
-    if: ${{needs.check.outputs.canceled != 'true'}}
+    #if: ${{needs.check.outputs.canceled != 'true'}}
 
     strategy:
       matrix:
